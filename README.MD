@@ -9,4 +9,5 @@
 3. [Probably a great design](https://www.wix.com/demone2/food-truck)
 4. [Compress videos](https://www.freeconvert.com/video-compressor/)
 5. [Register Domain](https://www.godaddy.com/en-ph)
+5.1 [Connect domain to github pages](https://youtu.be/CwT2_K3tlZw?si=e3Eqs2Q_YBzqx-ea&t=196)
 6. [Formspree for user submitted responses](https://formspree.io/forms/xanevkrp/integration)
