@@ -35,22 +35,51 @@
       .bgimg {
         background-image: none;
       }
+
       .mobile {
-        display:block;
-        position: fixed;
+        display: block;
+        /* position: fixed;
         right: 0;
         bottom: 0;
         min-width: 100%;
-        min-height: 100%;
+        min-height: 100%; */
       }
+    }
+
+    .video-container {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    .video-container video {
+      /* Make video to at least 100% wide and tall */
+      min-width: 100%;
+      min-height: 100%;
+      /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      width: auto;
+      height: auto;
+      /* Center the video */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   </style>
 </head>
 
 <body>
-  <video src="./images/bt2.mp4" muted playsinline loop autoplay preload="auto" class="mobile">
-    <source src="./images/bt2.mp4" type="video/mp4">
-  </video>
+  <div class="video-container mobile">
+    <video src="./images/mobile_btsk.mp4" muted playsinline loop autoplay preload="auto" class="mobile">
+      <source src="./images/mobile_btsk.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <!-- <video src="./images/mbtsk.mp4" muted playsinline loop autoplay preload="auto" class="mobile">
+    <source src="./images/mbtsk.mp4" type="video/mp4">
+  </video> -->
   <div class=" w3-display-container w3-text-white bgimg">
     <div class="w3-display-topright w3-jumbo" style="
   text-align: center; display: flex;flex-direction: column;align-items: center;background-color:white;margin:16px;">
@@ -60,10 +89,12 @@
     <span style="font-size:20px;color:white;letter-spacing: 12px;">STREET KITCHEN</span> -->
       <div
         style="margin: 0!important;font-size: 3rem;line-height:60px;color:black;padding: 0 10px;background-color:white;">
-        <strong>BLACK</strong></div>
+        <strong>BLACK</strong>
+      </div>
       <div
         style="margin: 0!important;font-size: 5rem;line-height:60px;text-align: center;color:black;padding: 0 10px;background-color:white;">
-        <strong>TOP</strong></div>
+        <strong>TOP</strong>
+      </div>
       <!-- <div> -->
       <span
         style="font-size:18px;color:black;letter-spacing: 0px;padding: 0 10px;background-color:white;"><strong>STREET
