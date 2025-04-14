@@ -8,6 +8,7 @@
   <link rel="icon" type="image/x-icon" href="./images/bt-icon.jpg">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     body,
     h1,
@@ -76,6 +77,29 @@
       left: 50%;
       transform: translate(-50%, -50%);
     }
+
+    .fa {
+      margin: 20px 5px;
+      padding: 20px;
+      font-size: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-whatsapp {
+      background: #24d366;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
   </style>
 </head>
 
@@ -113,14 +137,27 @@
       <p><button onclick="document.getElementById('menu').style.display='block'"
           class="w3-button w3-black">menu</button></p>
       <p><button onclick="document.getElementById('contact').style.display='block'"
-          class="w3-button w3-black">Book</button></p>
+          class="w3-button w3-black">book</button></p>
+      <p><button onclick="document.getElementById('locations').style.display='block'"
+          class="w3-button w3-black">locations</button></p>
     </div>
-    <div class="w3-display-bottomleft w3-container">
-      <p class="w3-xlarge">friday - saturday 10am - 11pm | sunday 11am - 8pm</p>
+    <!-- <div class="w3-display-bottomleft w3-container">
+      <a target="_blank" href="http://maps.google.com/?q=Erica Drive, Chestnut Way, Belhar 17, Cape Town">
+        <p class="w3-large">Bayhill Premier Cup Tournament, Elsis River</p>
+      </a>
+      <p class="w3-xlarge">friday 3pm - 10pm | saturday 12pm - 10pm | sunday 12pm - 8pm</p>
       <a target="_blank" href="http://maps.google.com/?q=146 Vasco Blvd, Goodwood, Cape Town, 7459">
         <p class="w3-large">Vasco Blvd, Goodwood, Cape Town</p>
       </a>
+    </div> -->
+    <!-- <div class="w3-display-bottomright w3-container">
+      <a href="https://wa.me/0765063002?text=I'm%20inquiring%20about%20an%20event" class="fa fa-whatsapp"></a>
+      <a href="https://www.instagram.com/blacktopstreetkitchen/" target="_blank" class="fa fa-instagram"></a>
     </div>
+    <div class="w3-display-topright w3-container">
+      <a href="https://wa.me/0765063002?text=I'm%20inquiring%20about%20an%20event" class="fa fa-whatsapp"></a>
+      <a href="https://www.instagram.com/blacktopstreetkitchen/" target="_blank" class="fa fa-instagram"></a>
+    </div> -->
   </div>
   <!-- Menu Modal -->
   <div id="menu" class="w3-modal">
@@ -128,17 +165,42 @@
       <div class="w3-container w3-black w3-display-container">
         <span onclick="document.getElementById('menu').style.display='none'"
           class="w3-button w3-display-topright w3-large">x</span>
-        <h1>Favourites</h1>
+        <h1>Menu</h1>
       </div>
       <div class="w3-container">
-        <h5>Cheesy Fries <b>$6.50</b>
-          <br><span style="font-size: 14px;">Describe the dish here!</span>
+        <h5>Loaded Boerie <b>R60</b>
+          <br><span style="font-size: 14px;">Brioche rooll, custom crafted boerewors loaded with fries and caramelised
+            onion - option 2 sauces</span>
         </h5>
-        <h5>Black Top Burger<b>$2.50</b></h5>
-        <h5>Supper Loaded Boerie <b>$3.50</b></h5>
-        <h5>Kasmiri Prawns & Naan <b>$10.00</b></h5>
+        <h5>Supper Loaded Boerie <b>R100</b>
+          <br><span style="font-size: 14px;">Custom crafted boerewors loaded on a garlic naan with fries, cheesy sauce,
+            caramelised onion and jalapeno</span>
+        </h5>
+        <h5>Tikka Skewers & Naan <b>R80</b>
+          <br><span style="font-size: 14px;">2 kashmiri chicken skewers loaded on a garlic naan, fries topped with a
+            garlic lemon aioli and fresh coriander</span>
+        </h5>
+        <h5>Kasmiri Prawns & Naan <b>R180</b>
+          <br><span style="font-size: 14px;">4 medium flamed griilled prawns served on fries and garlic naan, topped
+            with kashmiri yoghurt, lemon aioli and fresh coriander</span>
+        </h5>
+        <h5>Black Top Beef Burger <b>R90</b>
+          <br><span style="font-size: 14px;">2 custom crafted smash patties, double cheese, caramelised onion, smokey
+            aioli and fries</span>
+        </h5>
+        <h5>Cheesy Fries <b>R50</b>
+          <br><span style="font-size: 14px;">Fries topped wiith a super cheery sauce - jalapeno optional</span>
+        </h5>
+        <h5>Crispey Wings & Fries <b>R60</b>
+          <br><span style="font-size: 14px;">6 crispy crumbed winglets served with fries - option 2 sauces</span>
+        </h5>
+        <h5>Chicken Tenders & Fries <b>R60</b>
+          <br><span style="font-size: 14px;">4 tenders and fries - option 2 sauces</span>
+        </h5>
+        <h5>Bashews <b>R15</b></h5>
+        <h5>Water <b>R15</b></h5>
       </div>
-      <div class="w3-container w3-black">
+      <!-- <div class="w3-container w3-black">
         <h1>Mains</h1>
       </div>
       <div class="w3-container">
@@ -163,7 +225,7 @@
       <div class="w3-container">
         <h5>Bashews <b>$2.50</b></h5>
         <h5>Water <b>$2.00</b></h5>
-      </div>
+      </div> -->
     </div>
   </div>
   <!-- Contact Modal -->
@@ -176,20 +238,39 @@
       </div>
       <div class="w3-container">
         <p>Do you have an event that you want us to cater, send us the details and we will get back to you:</p>
-        <form  action="https://formspree.io/f/xanevkrp" method="POST">
-          <p>  
-          <label>Your email:
-            <input class="w3-input w3-padding-16 w3-border" type="email" name="email">
-          </label>
+        <!-- <form action="https://formspree.io/f/xanevkrp" method="POST">
+          <p>
+            <label>Your email: <input class="w3-input w3-padding-16 w3-border" type="email" name="email">
+            </label>
           </p>
           <p>
-            <label>
-              Your message:
-              <textarea class="w3-input w3-padding-16 w3-border" name="message"></textarea>
+            <label> Your message: <textarea class="w3-input w3-padding-16 w3-border" name="message"></textarea>
             </label>
           </p>
           <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
-        </form>
+        </form> -->
+
+        <a href="https://wa.me/0765063002?text=I'm%20inquiring%20about%20an%20event" class="fa fa-whatsapp"></a>
+        <a href="https://www.instagram.com/blacktopstreetkitchen/" target="_blank" class="fa fa-instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div id="locations" class="w3-modal">
+    <div class="w3-modal-content w3-animate-zoom">
+      <div class="w3-container w3-black">
+        <span onclick="document.getElementById('locations').style.display='none'"
+          class="w3-button w3-display-topright w3-large">x</span>
+        <h1>Locations</h1>
+      </div>
+      <div class="w3-container">
+        <h5>
+          <a target="_blank" href="http://maps.google.com/?q=Erica Drive, Chestnut Way, Belhar 17, Cape Town"> Bayhill Premier Cup Tournament, Elsis River</a>
+          <br><span style="font-size: 14px;">april friday 18 - sunday 20</span>
+        </h5>
+        <h5>
+          <a target="_blank" href="http://maps.google.com/?q=146 Vasco Blvd, Goodwood, Cape Town, 7459"> Vasco Blvd, Goodwood, Cape Town</a>
+          <br><span style="font-size: 14px;">every friday 3pm - 10pm | saturday 12pm - 10pm | sunday 12pm - 8pm</span>
+        </h5>
       </div>
     </div>
   </div>
